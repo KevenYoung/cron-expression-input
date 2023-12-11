@@ -1,6 +1,6 @@
 {
-  "name": "cron-expression-input",
-  "version": "1.3.1",
+  "name": "@zixel/cron-expression-input",
+  "version": "1.3.1-alpha.4",
   "description": "Cron UI: input component to generate cron expressions easily and intuitively",
   "main": "lib/cron-expression-input.min.js",
   "files": [
@@ -8,7 +8,8 @@
     "lib/cultures/*"
   ],
   "exports": {
-    "./": "./lib/",
+    ".": "./lib/cron-expression-input.min.js",
+    "./lib/": "./lib/",
     "./cultures/": "./lib/cultures/"
   },
   "repository": {
@@ -34,7 +35,8 @@
   ],
   "scripts": {
     "start": "webpack serve",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "release": "npm publish --registry=https://maven.zixel.cn/repository/npm-hosted/ --userconfig ./.npmrc --no-git-tag"
   },
   "dependencies": {
     "cron-validator": "^1.2.1",
