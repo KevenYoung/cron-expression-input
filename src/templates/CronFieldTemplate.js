@@ -4,7 +4,7 @@ export function CronFieldTemplateGenerator (obj, objLang) {
             <style>
             cron-expression-input input[type="radio"]:checked:after { background-color: ${obj.colorMain} !important; }
             cron-expression-input input[type="radio"] { border: 0.1em solid ${obj.colorSecond} !important; }
-            .container input:checked ~ .checkmark { background-color: ${obj.colorSecond} !important; }
+            cron-expression-input .container input:checked ~ .checkmark { background-color: ${obj.colorSecond} !important; }
             </style>
             <form>
                 <div style='display: flex; height: 138px;'>
